@@ -1,0 +1,11 @@
+.idea
+
+ms-billing/dist
+ms-billing/node_modules
+
+ms-auth/dist
+ms-auth/node_modules
+
+api-gateway/dist
+api-gateway/node_modules
+
