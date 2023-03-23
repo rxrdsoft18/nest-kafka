@@ -17,6 +17,8 @@ async function bootstrap() {
       },
     },
   );
+    console.log('ms-auth: ready!!!')
   await app.listen();
+
 }
 bootstrap();

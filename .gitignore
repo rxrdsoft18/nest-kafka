@@ -1,7 +1,7 @@
 .idea
 
-ms-billing/dist
-ms-billing/node_modules
+ms-payments/dist
+ms-payments/node_modules
 
 ms-auth/dist
 ms-auth/node_modules

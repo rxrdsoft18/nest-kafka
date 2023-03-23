@@ -12,11 +12,12 @@ async function bootstrap() {
           brokers: ['localhost:9092'],
         },
         consumer: {
-          groupId: 'billing-consumer',
+          groupId: 'payment-consumer',
         },
       },
     },
   );
+    console.log("ms-payments: ready!!!")
   await app.listen();
 }
 bootstrap();
