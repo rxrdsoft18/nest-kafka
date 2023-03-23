@@ -1,8 +1,7 @@
 import { Controller, Get, Inject, OnModuleInit } from '@nestjs/common';
 import { AppService } from './app.service';
 import { ClientKafka, EventPattern } from '@nestjs/microservices';
-import {OrderCreatedDto} from "./dtos/order-created.dto";
-import {MakePaymentDto} from "./dtos/make-payment.dto";
+import { MakePaymentDto } from './dtos/make-payment.dto';
 
 @Controller()
 export class AppController implements OnModuleInit {

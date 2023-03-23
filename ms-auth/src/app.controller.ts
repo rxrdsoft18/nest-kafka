@@ -1,7 +1,6 @@
-import {Controller, Get, ParseIntPipe, ValidationPipe} from '@nestjs/common';
+import { Controller, Get, ParseIntPipe, ValidationPipe } from '@nestjs/common';
 import { AppService } from './app.service';
 import { EventPattern, MessagePattern, Payload } from '@nestjs/microservices';
-import { GetUserDto } from './dtos/get-user.dto';
 import { CreateUserDto } from './dtos/create-user.dto';
 
 @Controller()

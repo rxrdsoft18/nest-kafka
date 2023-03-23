@@ -10,7 +10,7 @@ export class AppService implements OnModuleInit {
   ) {}
   processPayment(makePaymentDto: MakePaymentDto) {
     const { userId, amount } = makePaymentDto;
-    console.log('process payment');
+    console.log('process payment', makePaymentDto);
     this.authClient
       .send('get_user', JSON.stringify({ userId }))
       .subscribe((user: User) => {

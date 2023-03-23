@@ -1,5 +1,5 @@
-# nest-kafka
-Microservices using Kafka
+# POC Nestjs with Kafka
+ Project using Nestjs with Kafka, three microservices and an API Gateway.
 
 ## Description
 Project to test the use of Kafka in a microservices architecture.
@@ -14,10 +14,18 @@ Project to test the use of Kafka in a microservices architecture.
 7. Run `npm run start:dev` to start the Billing Microservice.
 
 ## Usage
-1. Api Gateway: POST http://localhost:3000/billing
+1. Api Gateway Create user: POST http://localhost:3000/api/auth/sign-up
 ```
 {
-    "userId":"d7564509-0c01-4ffc-a4bd-c7796d96ff20",
-    "price": 3500
+    "name": "Richard Jans",
+    "email": "hola@gmail.com"
+}
+```
+
+2. Api Gateway Make pay: POST http://localhost:3000/api/payments/pay
+```
+{
+    "userId":1,
+    "amount": 3500
 }
 ```
