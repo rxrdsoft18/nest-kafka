@@ -7,8 +7,8 @@ export class PaymentController {
   constructor(private readonly paymentService: PaymentService) {}
 
   @Post('pay')
-  makePayment(@Body(ValidationPipe) makePaymentDto: MakePaymentDto) {
+  async makePayment(@Body(ValidationPipe) makePaymentDto: MakePaymentDto) {
     console.log(makePaymentDto);
-    this.paymentService.makePayment(makePaymentDto);
+    await this.paymentService.makePayment(makePaymentDto);
   }
 }

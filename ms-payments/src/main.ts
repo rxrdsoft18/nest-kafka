@@ -17,7 +17,7 @@ async function bootstrap() {
       },
     },
   );
-    console.log("ms-payments: ready!!!")
+  console.log('ms-payments: ready!!!');
   await app.listen();
 }
 bootstrap();

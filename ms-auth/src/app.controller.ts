@@ -13,8 +13,8 @@ export class AppController {
   }
 
   @EventPattern('create_user')
-  handleUserCreate(@Payload(ValidationPipe) data: CreateUserDto) {
-    console.log('ms-auth: createUser', data);
-    this.appService.createUser(data);
+  handleUserCreate(@Payload(ValidationPipe) createUserDto: CreateUserDto) {
+    console.log('ms-auth: createUser', createUserDto);
+    this.appService.createUser(createUserDto);
   }
 }
